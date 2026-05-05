@@ -1,5 +1,6 @@
 mod 'puppet-nginx'
 mod 'puppetlabs-concat'
 mod 'puppetlabs-stdlib'
-mod 'dockeragent', 'https://github.com/AriseFenrir/dockeragent.git'
+mod 'dockeragent',
+  :git => 'https://github.com/AriseFenrir/dockeragent.git'
 mod 'puppetlabs-docker'
