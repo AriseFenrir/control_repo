@@ -1,7 +1,7 @@
 class minecraft {
   $url = 'https://piston-data.mojang.com/v1/objects/886945bfb2b978778c3a0288fd7fab09d315b25f/server.jar'
   $install_dir = '/opt/minecraft'
-  file {'/opt/minecraft':
+  file {$install_dir:
     ensure => directory,
   }
   file {"${install_dir}/server.jar":
